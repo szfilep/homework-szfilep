@@ -1,0 +1,4 @@
+#Datasource
+spring.jpa.show-sql: true
+
+logging.level.com.chemaxon: DEBUG

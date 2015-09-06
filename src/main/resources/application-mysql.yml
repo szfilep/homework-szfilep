@@ -1,0 +1,11 @@
+spring:
+   profiles: mysql
+   datasource:
+      url: jdbc:mysql://localhost:3306/mstore?useUnicode=true&characterEncoding=UTF-8
+      username: mstore
+      password: mstore
+      driverClassName: com.mysql.jdbc.Driver
+   jpa:
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate.ddl-auto: update
+      show-sql: true
