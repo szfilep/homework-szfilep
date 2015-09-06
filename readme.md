@@ -5,23 +5,29 @@
 ### Build
 
 #### HSQLDB: 
+
 Maven build:
+
 `mvn clean package`
 
 #### MYSQL:
 
 Create database and user with sql/mysql_create_db_user.sql:
+
 `mysql -u root < sql/mysql_create_db_user.sql`
 
-Maven build: 
+Maven build:
+ 
 `mvn -P mysql clean package`
 
 ### Run 
 
 #### with HSQLDB:
+
 `java -jar target/homework-szfilep-1.0-SNAPSHOT.jar`
 
 #### with MYSQL
+
 `java -jar target/homework-szfilep-1.0-SNAPSHOT.jar --spring.profiles.active=mysql`
 
 ### Testing
@@ -29,6 +35,7 @@ Maven build:
 Best way to test it with a rest client. E.g. Google Chrome Postman plugin.
 
 By default 3 molecule is stored in db so open this in a browser just give you a representation:
+
 `http://localhost:8080/molecule?externalId=1`
  
 For POST don't forget to add the following http header: 
